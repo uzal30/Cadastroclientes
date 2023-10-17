@@ -1,0 +1,90 @@
+
+@import 'mixin.scss';
+@import 'variables.scss';
+
+body {
+    color: $main-text-color;
+    background: $app-background;
+    font-family: $default-font-family;
+    font-size: $default-font-size;
+}
+
+.main {
+    background: #fff;
+    padding: 20px 25px;
+    margin: 30px auto;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.btn {
+    font-size: $default-font-size;
+    cursor: pointer;
+}
+.text-bold {
+    font-weight: bold;
+}
+.page-header {
+    color: #fff;
+    background: $main-header-bg;		
+    padding: 16px 25px;
+    margin: -20px -25px 10px;
+    border-radius: 3px 3px 0 0;
+
+    h2 {
+        margin: 5px 0 0;
+        font-size: 24px;
+    }
+}
+
+.form-control {
+    font-size: $default-font-size;
+}
+
+.form-inline .form-check {
+    margin-right: 12px;
+
+    @include respond-to(small-screen) {
+        width: auto;
+    }
+}
+
+/* ngx-pagination */
+.ngx-pagination li {
+    position: relative;
+    margin-right: 0;
+}
+
+.ngx-pagination {
+    margin: 0 !important;
+
+    .current {
+        border-radius: 3px;
+    }
+
+    a, button {
+        color: $main-text-color !important;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+
+    .pagination-next a::after,
+    .pagination-next.disabled::after {
+        position: absolute;
+        right: -6px;
+        top: 1px;
+    }
+
+    .pagination-previous a::before,
+    .pagination-previous.disabled::before {
+        position: absolute;
+        left: -4px;
+        top: 1px;
+    }
+}
+
+/* datepicker */
+.mydp {
+    padding-bottom: 2px;
+}

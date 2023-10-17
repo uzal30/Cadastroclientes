@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.btn.btn-primary {
+    background: #2199e8;
+    border-color: #374f69;
+}
+
+.btn.btn-primary:hover {
+    background: #6588af;
+    border-color: #32485f;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 .2rem #32485f;
+}
